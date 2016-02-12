@@ -1846,7 +1846,7 @@ div.soliloquy-container .soliloquy-caption h4 {
 .entry-content ul li {
 /*commented out because of style conflict with GIVE plugin */
 /*	list-style-image: url(images/list-circle-color.png); */
-	list-style-type: none;
+	list-style-type: disc;
 }
 
 .entry-content ol ol,
