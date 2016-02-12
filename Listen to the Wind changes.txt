@@ -1,0 +1,145 @@
+If you decide to update the child theme then make sure to do what is below.
+
+Add to functions.php
+
+//*Adds Social Simple Icons to menu bar. August 31, 2014 This adds the social media icons to menubar  BC */
+
+genesis_register_sidebar( array(
+	'id'          => 'nav-social-menu',
+	'name'        => __( 'Nav Social Menu', 'your-theme-slug' ),
+	'description' => __( 'This is the nav social menu section.', 'your-theme-slug' ),
+) );
+
+add_filter( 'genesis_nav_items', 'sws_social_icons', 10, 2 );
+add_filter( 'wp_nav_menu_items', 'sws_social_icons', 10, 2 );
+
+function sws_social_icons($menu, $args) {
+	$args = (array)$args;
+	if ( 'primary' !== $args['theme_location'] )
+		return $menu;
+	ob_start();
+	genesis_widget_area('nav-social-menu');
+	$social = ob_get_clean();
+	return $menu . $social;
+}
+
+
+Also
+Two instances in lib/widgets/call-to-action.php where the code was changed of the CTA widget blocks were changed so the image was linkable (lines 48-60) and the CTA block no longer opens in a new window. (lines 70-72) August 25, 2014   BC  
+
+
+
+OTHER CHANGES
+
+BLOG PAGE MODS
+
+May 24, 2015  5:14 PM
+To make the archive/blog pages layout better for portrait thumbnails on those pages, the following code has been added to the functions.php file and style sheet.
+
+
+/*Aligns copy on Blog/Archive pages */
+
+remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+remove_action( 'genesis_post_content', 'genesis_do_post_image' );
+add_action( 'genesis_entry_content', 'sk_do_post_image', 8 );
+add_action( 'genesis_post_content', 'sk_do_post_image' );
+/**
+ * Echo the post image on archive pages.
+ *
+ * If this an archive page and the option is set to show thumbnail, then it gets the image size as per the theme
+ * setting, wraps it in the post permalink and echoes it.
+ *
+ * @since 1.1.0
+ *
+ * @uses genesis_get_option() Get theme setting value.
+ * @uses genesis_get_image()  Return an image pulled from the media library.
+ * @uses genesis_parse_attr() Return contextual attributes.
+ */
+function sk_do_post_image() {
+
+	if ( ! is_singular() && genesis_get_option( 'content_archive_thumbnail' ) ) {
+		$img = genesis_get_image( array(
+			'format'  => 'html',
+			'size'    => genesis_get_option( 'image_size' ),
+			'context' => 'archive',
+			'attr'    => genesis_parse_attr( 'entry-image' ),
+		) );
+
+		if ( ! empty( $img ) )
+			printf( '<div class="archive-pages-image"><a href="%s" title="%s">%s</a></div>', get_permalink(), the_title_attribute( 'echo=0' ), $img );
+	}
+
+}
+
+/**
+ * Change Image Alignment of Featured Image From Left to Center
+ *
+ */
+function sk_change_image_alignment( $attributes ) {
+
+	$attributes['class'] = str_replace( 'alignleft', 'aligncenter', $attributes['class'] );
+		return $attributes;
+
+}
+add_filter( 'genesis_attr_entry-image', 'sk_change_image_alignment' );
+
+-------
+For style.css
+/*Responsive for Archive Pages May 24, 2015   BC */
+
+
+@media only screen and (max-width: 568px) {
+	.archive-pages-image {
+		width: auto;
+		height: auto;
+		margin-bottom: 0;
+	}
+
+.content h2.entry-title  {
+	text-align: center;
+
+}
+
+.entry-header .entry-meta {
+	text-align: center;
+}
+
+}
+@media only screen and (max-width: 500px) {
+	.archive-pages-image {
+		margin-right: 0;
+		float: none;
+	}
+	
+.content h2.entry-title  {
+	text-align: center;	
+}
+.entry-header .entry-meta {
+	text-align: center;
+	
+}
+
+/************************************/
+/*! Archive page*/
+/************************************/
+
+.archive-pages-image {
+	width: 300px;
+	height: 300px;
+	margin: 0 24px 24px 0;
+	float: left;
+	text-align: center;
+}
+-------
+
+Also commented out line 81 in the functions.php file to fix a double thumbnail that was showing up on the archive/blog pages
+
+// Line 81 was commented out to take out the double image created on the blog page. May 24, 2015   BC 
+//* add_action( 'genesis_entry_header', 'genesis_do_post_image', 1 );
+
+
+
+
+
+END OF CODE ADDITION.
+
