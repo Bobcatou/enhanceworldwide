@@ -175,11 +175,13 @@ genesis_register_sidebar( array(
 	'name'			=> __( 'Home Bottom 2', 'patricia' ),
 	'description'	=> __( 'This is the home page bottom section.', 'patricia' ),
 ) );
-genesis_register_sidebar( array(
-	'id'			=> 'home-bottom3',
-	'name'			=> __( 'Home Bottom 3', 'patricia' ),
-	'description'	=> __( 'This is the home page bottom section.', 'patricia' ),
-) );
+
+// Commented out to change to two widget area
+//genesis_register_sidebar( array(
+//	'id'			=> 'home-bottom3',
+//	'name'			=> __( 'Home Bottom 3', 'patricia' ),
+//	'description'	=> __( 'This is the home page bottom section.', 'patricia' ),
+//) );
 genesis_register_sidebar( array(
 	'id'			=> 'blog-sidebar',
 	'name'			=> __( 'Blog Sidebar', 'patricia' ),
