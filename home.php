@@ -29,7 +29,7 @@ function patricia_home_loop_helper() {
 	echo'<div class="home-bottom">';
 	genesis_widget_area( 'home-bottom1', array( 'before' => '<div class="home-bottom1 widget-area">', 'after' => '</div>') );
 	genesis_widget_area( 'home-bottom2', array( 'before' => '<div class="home-bottom2 widget-area">', 'after' => '</div>') );
-	genesis_widget_area( 'home-bottom3', array( 'before' => '<div class="home-bottom3 widget-area">', 'after' => '</div>') );
+//	genesis_widget_area( 'home-bottom3', array( 'before' => '<div class="home-bottom3 widget-area">', 'after' => '</div>') ); //to modify and change to only 2 home bottome areas
 	echo'</div >';
 }
 
