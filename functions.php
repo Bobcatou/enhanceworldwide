@@ -94,7 +94,7 @@ add_filter( 'excerpt_more', 'wsm_add_excerpt_more' );
 add_filter( 'get_the_content_more_link', 'wsm_add_excerpt_more' );
 add_filter( 'the_content_more_link', 'wsm_add_excerpt_more' );
 function wsm_add_excerpt_more( $more ) {
-    return '<span class="more-link"><a href="' . get_permalink() . '" rel="nofollow">Read More</a></span>';
+    return '<span class="more-link"><a href="' . get_permalink() . '" rel="nofollow">Learn More</a></span>';
 }
 
 /*
