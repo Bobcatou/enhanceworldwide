@@ -1758,10 +1758,10 @@ div.soliloquy-container .soliloquy-caption h4 {
 	margin-left: 3%;
 }
 
-.home-bottom .widget-area.home-bottom3 {
+/*.home-bottom .widget-area.home-bottom3 {
 	float: right;
 }
-
+*/
 .home-bottom .featured-content.wsmfeaturedpost .entry-meta {
 	border-right: 1px solid #c5c6c7;
 	color: #231f20;
@@ -3510,7 +3510,7 @@ Media Queries
 	}
 
 	.home-bottom .widget-area.home-bottom2,
-	.home-bottom .widget-area.home-bottom3 {
+/*	.home-bottom .widget-area.home-bottom3*/ {
 		width: 48%;
 	}
 
@@ -3648,7 +3648,7 @@ position:relative;
 	}
 
 	.home-bottom .widget-area.home-bottom2,
-	.home-bottom .widget-area.home-bottom3 {
+/*	.home-bottom .widget-area.home-bottom3*/ {
 		float: none;
 		width: 100%;
 	}
