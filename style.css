@@ -3919,7 +3919,7 @@ position:relative;
 @media only screen and (max-width: 680px) {
 
 .home-cta .wsm-cta .cta-text {
-	text-align: center;
+	text-align: left;
 }
 
 h1.entry-title {
