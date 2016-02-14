@@ -1746,6 +1746,8 @@ div.soliloquy-container .soliloquy-caption h4 {
 .home-bottom {
 	font-weight: 300;
 	overflow: hidden;
+	padding-top: 30px;
+    background: url(images/color-line.png) repeat-x 0 top;
 }
 
 .home-bottom .widget-area {
