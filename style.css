@@ -3256,9 +3256,14 @@ h1.entry-title {
 /************************************/
 
 .soliloquy-caption h2 {
-	font-size: 3.4rem !important;
+	font-size: 3.8rem !important;
 	text-transform: capitalize !important;
-	margin-bottom: 3em !important;
+	margin-bottom: 3em;
+}
+.third_slide h2 {
+	margin-bottom: 3.8em !important;
+	font-size: 4rem !important;
+	text-transform: capitalize !important;
 
 
 }
@@ -3448,13 +3453,12 @@ Media Queries
 		margin-bottom: 1em;
 	}	
 
-	#third_slide h2 {
-	margin-bottom: 4.5rem !important;
-	}
+
 
 .soliloquy-caption h2 {
-	margin-bottom: 2em !important;
+	margin-bottom: 2em;
 }
+
 
 /************************************/
 /*! Fixes gap between third and fourth paragraph. Starts with "The best option" */
