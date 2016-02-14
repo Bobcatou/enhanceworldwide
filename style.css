@@ -3147,7 +3147,8 @@ h1.entry-title {
 
 .archive-pages-image {
 	width: 300px;
-	height: 300px;
+/*	height: 300px;*/
+	height: auto;
 	margin: 0 24px 24px 0;
 	float: left;
 	text-align: center;
