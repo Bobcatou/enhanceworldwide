@@ -3629,6 +3629,15 @@ position:relative;
 }
 
 
+
+
+.genesis-nav-menu .widget-area {
+	padding-top: 0 !important;
+}
+
+.simple-social-icons {
+	padding-bottom: 20px;
+
 }
 
 
