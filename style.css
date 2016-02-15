@@ -3450,7 +3450,7 @@ Media Queries
 		right: 10px;
 	}
 	div.soliloquy-container .soliloquy-caption h2 {
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 	}	
 
 
@@ -3999,6 +3999,24 @@ position:relative;
 
 
 }
+
+
+
+@media only screen and (max-width: 414px) {
+
+section#soliloquy-2 {
+    min-height: 188px;
+}
+
+	
+
+}
+
+
+
+
+
+
 
 /*Responsive for Archive Pages May 24, 2015   BC */
 
