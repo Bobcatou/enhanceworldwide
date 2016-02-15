@@ -3260,11 +3260,11 @@ h1.entry-title {
 	text-transform: capitalize !important;
 	margin-bottom: 3em;
 }
-.third_slide h2 {
+/*.third_slide h2 {
 	margin-bottom: 3.8em !important;
 	font-size: 4rem !important;
 	text-transform: capitalize !important;
-
+*/
 
 }
 .water-girls {
@@ -3639,6 +3639,7 @@ position:relative;
 	.genesis-nav-menu > .last > a {
 		padding: 6px 10px;
 		padding: 0.6rem 1rem;
+		
 	}
 
 	.content,
@@ -3651,11 +3652,20 @@ position:relative;
 	}
 
 	div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
-		max-width: 100%;
+		max-width: 70%;
 		padding: 20px;
 		padding: 2rem;
+		margin-top: -151px;
 	}
 
+section#soliloquy-2 {
+    min-height: 172px;
+}
+
+
+.soliloquy-caption h2 {
+	font-size: 1.55em !important;
+}
 	.wsm-cta .cta-text {
 		max-width: 65%;
 	}
