@@ -3837,6 +3837,22 @@ img.alignleft.post-image.entry-image {
   display:block;
 }
 
+	div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+		max-width: 70%;
+		padding: 20px;
+		padding: 1rem;
+		margin-top: -80px;
+	}
+
+section#soliloquy-2 {
+    min-height: 130px;
+}
+
+
+.soliloquy-caption h2 {
+	font-size: 1em !important;
+}
+
 	
 }
 
