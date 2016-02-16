@@ -3756,7 +3756,10 @@ position:relative;
 	margin-top: 0em! important;
 }
 
-
+/*Twitter border*/
+.sidebar .widget {
+	border-left: none;
+}
 	
 }
 
@@ -4077,7 +4080,7 @@ div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
 }
 
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 320px) {
 
 section#soliloquy-2 {
     min-height: 129px;
