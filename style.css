@@ -3776,21 +3776,6 @@ h1.entry-title {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 480px) {
 
 	.home-top .widgettitle,
@@ -3896,6 +3881,33 @@ section#soliloquy-2 {
 	
 }
 
+/*LWM Media Query changes. August 30, 2014   BC */
+
+
+@media only screen and (max-width: 414px) {
+
+section#soliloquy-2 {
+    min-height: 168px;
+}
+div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    padding: 0;
+}	
+
+	}
+
+
+@media only screen and (max-width: 384px) {
+
+section#soliloquy-2 {
+    min-height: 156px;
+}
+div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    padding: 0;
+}	
+
+	}
+
+
 @media only screen and (max-width: 380px) {
 
 	.title-area {
@@ -3949,7 +3961,7 @@ position:relative;
 /************************************/
 /*! Adjusts Title's top margin on About Us*/
 /************************************/
-
+/*
 .post-5 hr {
 	margin-top: 0px;
 }
@@ -3977,48 +3989,10 @@ position:relative;
 #brian {
 	margin-top: 0rem;
 	}
-
-}
-/*LWM Media Query changes. August 30, 2014   BC */
-
-
-@media only screen and (max-width: 414px) {
-
-section#soliloquy-2 {
-    min-height: 168px;
-}
-div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
-    padding: 0;
-}	
-
-	}
-
-
-@media only screen and (max-width: 384px) {
-
-section#soliloquy-2 {
-    min-height: 156px;
-}
-div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
-    padding: 0;
-}	
-
-	}
-
-
-
-
-@media only screen and (max-width: 375px) {
-
-section#soliloquy-2 {
-    min-height: 152px;
+*/
 }
 
-div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
-    padding: 0;
-}	
 
-}
 
 
 @media only screen and (max-width: 375px) {
