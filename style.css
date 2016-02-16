@@ -3878,10 +3878,24 @@ section#soliloquy-2 {
 	font-size: 1em !important;
 }
 
-	
+
+/* Centered images that float left and right for better viewing */
+/************************************/
+
+
+img.alignleft, .wp-caption.alignleft, .alignright img{
+float:none;
+margin: 0 auto
 }
 
-/*LWM Media Query changes. August 30, 2014   BC */
+img.alignright, .wp-caption.alignright {
+display:block;
+float:none;
+margin: 0 auto;
+}
+
+
+
 
 
 @media only screen and (max-width: 414px) {
