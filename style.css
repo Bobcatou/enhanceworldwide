@@ -3761,7 +3761,35 @@ position:relative;
 	border-left: none;
 }
 	
+.home-cta .wsm-cta .cta-text {
+	text-align: left;
 }
+
+h1.entry-title {
+	text-align: center;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 480px) {
 
@@ -3952,63 +3980,6 @@ position:relative;
 
 }
 /*LWM Media Query changes. August 30, 2014   BC */
-
-
-@media only screen and (max-width: 680px) {
-
-.home-cta .wsm-cta .cta-text {
-	text-align: left;
-}
-
-h1.entry-title {
-	text-align: center;
-}
-/************************************/
-/*! Center's image on About Us Page*/
-/************************************/
-
-
-.post-5 a img.alignleft {
-margin:0 auto !important;
-width:50%;
-left:25%;
-position:relative;
-	}
-
-
-/************************************/
-/*! Adjusts Title's top margin on About Us*/
-/************************************/
-
-.post-5 hr {
-	margin-top: 0px;
-}
-
-#ashley {
-	margin-top: 0rem;
-}
-
-#heather {
-	margin-top: 0rem;
-}
-
-#amare {
-	margin-top: 0rem;
-}
-
-#roxanne {
-	margin-top: 0rem;
-}
-
-#tsion {
-	margin-top: 0rem;
-}
-
-#brian {
-	margin-top: 0rem;
-	}
-	}
-
 
 
 @media only screen and (max-width: 414px) {
