@@ -4004,24 +4004,77 @@ position:relative;
 #brian {
 	margin-top: 0rem;
 	}
-	
-
-
-}
+	}
 
 
 
 @media only screen and (max-width: 414px) {
 
 section#soliloquy-2 {
-    min-height: 188px;
+    min-height: 168px;
+}
+div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    padding: 0;
+}	
+
+	}
+
+
+@media only screen and (max-width: 384px) {
+
+section#soliloquy-2 {
+    min-height: 156px;
+}
+div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    padding: 0;
+}	
+
+	}
+
+
+
+
+@media only screen and (max-width: 375px) {
+
+section#soliloquy-2 {
+    min-height: 152px;
 }
 
-	
+div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    padding: 0;
+}	
 
 }
 
 
+@media only screen and (max-width: 375px) {
+
+section#soliloquy-2 {
+    min-height: 152px;
+}
+
+div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    padding: 0;
+}	
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 360px) {
+
+section#soliloquy-2 {
+    min-height: 146px;
+}
+
+div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    padding: 0;
+}	
+
+}
 
 
 
