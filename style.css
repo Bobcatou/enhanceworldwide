@@ -4077,6 +4077,18 @@ div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
 }
 
 
+@media only screen and (max-width: 360px) {
+
+section#soliloquy-2 {
+    min-height: 129px;
+}
+
+div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    padding: 0;
+}	
+
+}
+
 
 
 
