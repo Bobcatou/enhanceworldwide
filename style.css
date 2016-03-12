@@ -3338,7 +3338,7 @@ h6, .site-header .search-form, .gform_wrapper h3.gform_title {
 
 /*Below fixes issue with disappearing simple social icons in menu bar */
 .simple-social-icons ul li a, .simple-social-icons ul li a:hover {
-	font-family: fontello !important;
+	font-family: 'ssi-icomoon' !important;
 }
 
 /************************************/
@@ -3378,6 +3378,8 @@ img#imagemap-697-1 {
 	max-width: 1000px !important;
 	max-height: 1033px !important;
 }
+
+
 
 
 /************************************/
